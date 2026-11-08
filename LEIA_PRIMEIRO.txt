@@ -1,0 +1,59 @@
+TRADUTOR HOT SL — ATUALIZAÇÕES DENTRO DO APP
+
+NOVOS USUÁRIOS — INSTALADOR RECOMENDADO
+Baixe Tradutor_SL_Setup_1.1.0.exe na publicação oficial e abra o instalador.
+Ele já inclui os componentes necessários, cria os atalhos na área de trabalho
+e no menu Iniciar e permite desinstalar pelo Windows. Não exige Python instalado.
+O ZIP de instalação para novos usuários contém somente o EXE e LEIA_AQUI.txt.
+
+Os passos abaixo se aplicam ao pacote técnico de atualização em ZIP.
+
+PRIMEIRA INSTALAÇÃO DESTA EDIÇÃO
+1. Feche o tradutor antigo.
+2. Extraia TODO este ZIP em uma nova pasta fixa, fora da pasta Downloads
+   temporária se você costuma limpá-la. Não misture com a edição antiga.
+3. Execute 1_INSTALAR.bat. Requer Python 3.11 ou 3.12 de 64 bits com Tcl/Tk.
+4. Abra sempre 2_ABRIR_TRADUTOR.bat. Não execute app/tradutor.py diretamente.
+5. A chave DeepL protegida, as contas e as configurações salvas no mesmo
+   usuário do Windows continuam em %LOCALAPPDATA%\TradutorIMAlchemyDeepL.
+
+ATUALIZAR
+O repositório oficial desta edição já está configurado: lipedevpop/Tradutor-SL.
+Na engrenagem, abra Atualizações. Se o repositório ainda não estiver
+configurado, informe usuario/tradutor-hot-sl e clique Salvar e verificar.
+O repositório e suas versões precisam ser públicos. Não informe senha nem
+token do GitHub. A chave DeepL não é usada para verificar atualizações.
+
+Quando houver uma nova versão, leia as correções e clique Baixar atualização.
+Quando o preparo terminar, clique Reiniciar e atualizar. Copie sua resposta
+ainda não enviada antes de reiniciar. O acompanhamento das conversas será
+pausado; após reiniciar, confira a conta e clique Iniciar novamente.
+Mensagens recebidas enquanto o app estiver fechado não são recuperadas.
+
+A consulta ao GitHub acontece ao abrir, se marcada a opção correspondente,
+e pelo botão Salvar e verificar. Sem internet, o tradutor continua funcionando
+com sua versão instalada; as traduções ainda dependem da API DeepL.
+
+RECUPERAÇÃO
+Cada versão fica em uma pasta separada. O atualizador confirma a nova versão
+somente quando a janela e o filtro de idioma iniciam. Se a inicialização
+falhar ou demorar mais de 45 segundos, a versão anterior é reaberta.
+Isso não testa a conexão DeepL nem todas as funções da versão nova.
+Para voltar depois de perceber um problema, abra Atualizações e clique
+Restaurar anterior. Se o aplicativo não abrir, feche suas janelas e execute
+5_RESTAURAR_ANTERIOR.bat.
+
+As bibliotecas também ficam separadas quando uma atualização precisa mudá-las.
+O preparo pode levar alguns minutos. A instalação atual permanece utilizável
+se o download ou o preparo falharem. A pasta app e as pastas versions,
+runtimes, .venv e .updates devem permanecer junto de iniciar.py.
+Não apague essas pastas nem os arquivos .active-version.json e
+.previous-version.json. A edição inicial e as versões baixadas ficam
+guardadas para recuperação; não há limpeza automática nesta edição.
+
+PUBLICAÇÃO
+Este ZIP consulta https://github.com/lipedevpop/Tradutor-SL. Novas versões
+precisam ser publicadas em Releases para serem oferecidas pelo atualizador.
+O pacote não publica versões sozinho. Consulte PUBLICAR_ATUALIZACOES.md.
+Esta edição usa o ícone oficial fornecido: o balão de conversa com foguinho,
+incluído na barra da janela e no cabeçalho do aplicativo.

@@ -1,0 +1,45 @@
+TRADUTOR HOT SL v0.9.6 — LEITURA DE HORÁRIOS COM FUSO
+Data: 05/11/2026
+
+FALHA CONFIRMADA
+O Cool VL Viewer grava linhas com horário e fuso, por exemplo:
+[05/11/2026 14:18:46 PST] TestPeer: Hello
+O leitor anterior não aceitava o sufixo PST e descartava a linha antes
+do filtro de inglês. O app podia mostrar Lendo sem receber uma conversa.
+
+CORREÇÃO
+O leitor reconhece sufixos de fuso como PST, PDT, SLT e UTC, além de
+offsets como -0800 e UTC-08:00. Preserva o horário original para exibição.
+Continua reconhecendo os formatos de Firestorm, Alchemy e Cool VL Viewer
+sem fuso, com data, AM/PM, segundos ou sem horário.
+Os filtros de IM individual, grupos, mensagens próprias e links permanecem.
+A área de mensagens agora informa que está aguardando novas IMs quando a
+leitura começa, sem manter o pedido antigo de seleção da pasta.
+
+VALIDAÇÃO
+O arquivo da conversa mostrada no print foi verificado somente para reproduzir
+a falha; seus conteúdos não estão incluídos neste pacote e ele não foi alterado.
+Das quatro linhas examinadas, a v0.9.5 reconheceu zero e a v0.9.6 reconheceu
+quatro. As quatro também passaram pelo filtro local de inglês.
+Não foi feita tradução real ou envio dessas linhas à API nesta verificação.
+
+73 testes automatizados passaram. Os cinco testes novos cobrem:
+- Data e hora com PST/PDT e outras abreviações de fuso.
+- Offsets e preservação de corpo com pontuação e emoji.
+- Exclusão de mensagens próprias, grupos, sistema e remetentes divergentes.
+- Início no fim do arquivo e leitura de novas linhas CRLF com fuso.
+- LogReader real → Worker → filtro de inglês → tradutor simulado,
+  com quatro mensagens entregues e sem envio do histórico antigo.
+Veja TESTES_0_9_6.txt para o resultado completo.
+
+USAR A CORREÇÃO
+1. Feche o tradutor antigo.
+2. Extraia este ZIP em uma NOVA pasta.
+3. Execute 1_INSTALAR.bat e depois 2_ABRIR_TRADUTOR.bat.
+4. Confira o viewer, a conta e a pasta das IMs na engrenagem.
+5. Clique Iniciar e peça uma NOVA mensagem, como hello ou how are you.
+Mensagens recebidas antes de iniciar não são recuperadas automaticamente.
+
+Mantém a seleção automática/manual dos três viewers, as contas predefinidas
+lipe.vortex e mab.leeeroy, as pastas salvas por conta e o filtro de inglês.
+As configurações e a chave protegida continuam na pasta de dados anterior.

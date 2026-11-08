@@ -1,0 +1,48 @@
+﻿TRADUTOR HOT SL v0.9.6 — CONTAS PREDEFINIDAS
+
+Contas: lipe.vortex e mab.leeeroy (grafia preservada com três letras e).
+As duas estão disponíveis em Firestorm, Alchemy e Cool VL Viewer.
+
+USAR UMA CONTA COMO PADRÃO
+1. Pause a leitura e abra a engrenagem.
+2. Deixe o viewer em Automático ou escolha um dos três manualmente.
+3. Em Conta, escolha lipe.vortex ou mab.leeeroy.
+4. Confira a pasta encontrada. Para caminhos personalizados, use Escolher….
+5. Confira Seu nome no chat e retome a leitura com Iniciar.
+A conta escolhida fica salva como padrão daquele viewer na próxima abertura.
+Cada combinação viewer/conta guarda seu caminho e os nomes extras separados.
+
+BUSCA AUTOMÁTICA DE CONTA
+O nome da subpasta precisa corresponder exatamente à conta, aceitando
+pontos, espaços, sublinhados e diferenças entre maiúsculas e minúsculas:
+- lipe.vortex / lipe_vortex / Lipe Vortex
+- mab.leeeroy / mab_leeeroy / Mab Leeeroy
+Nomes semelhantes, como mab.leeroy ou lipe_vortex_2, não são confundidos.
+
+Em Conta → Automática, a busca prioriza as pastas dessas duas contas.
+Se houver uma só pasta preferida, seleciona. Se houver as duas ou mais de
+uma pasta da mesma conta, mostra a lista para escolha.
+Se não houver nenhuma preferida, mantém a seleção geral de pastas.
+Ao escolher uma conta explicitamente, a busca não usa a pasta da outra
+como alternativa. Use Escolher… se a pasta correta estiver fora dos padrões.
+
+O tradutor lembra a escolha; a lista de pastas não comprova qual avatar
+está conectado. Confira a conta que está usando no viewer.
+A leitura acompanha uma pasta por vez. Não inicia login ou troca de avatar.
+
+IDENTIDADE NAS IMs
+Seu nome no chat é preenchido com a conta ativa no tradutor.
+Somente esse nome e seus aliases são ignorados como mensagens próprias.
+A outra conta predefinida não é adicionada automaticamente aos aliases:
+isso permite ler uma IM recebida dela como uma conversa normal.
+Você ainda pode adicionar um nome de exibição separado por ponto e vírgula.
+
+VALIDAÇÃO
+73 testes passaram. Os novos casos verificam nomes de pasta com separadores,
+correspondência exata, uma/duas contas preferidas, ausência da conta escolhida,
+troca e restauração de caminhos/aliases, preferência na próxima abertura,
+seleção pendente e bloqueio da troca durante a leitura.
+O fluxo usa Tk real com chave, configurações pessoais e rede simuladas.
+A tela com o novo seletor foi conferida visualmente em uma prévia no Windows.
+Nenhuma conversa real foi aberta e não houve tradução real no DeepL na validação.
+Veja TESTES_0_9_6.txt para o resultado completo.

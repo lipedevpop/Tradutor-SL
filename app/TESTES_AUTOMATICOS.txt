@@ -1,0 +1,40 @@
+test_auth_and_usage (test_deepl.Tests.test_auth_and_usage) ... ok
+test_free_endpoint (test_deepl.Tests.test_free_endpoint) ... ok
+test_key_not_saved_in_preferences (test_deepl.Tests.test_key_not_saved_in_preferences) ... ok
+test_quota_and_bad_key_pause_without_retry (test_deepl.Tests.test_quota_and_bad_key_pause_without_retry) ... ok
+test_text_preserved_and_cache (test_deepl.Tests.test_text_preserved_and_cache) ... ok
+test_chat_examples (test_english_review.EnglishReviewTests.test_chat_examples) ... ok
+test_known_combinations_override_statistical_false_negative (test_english_review.EnglishReviewTests.test_known_combinations_override_statistical_false_negative) ... ok
+test_limits_and_cache (test_english_review.EnglishReviewTests.test_limits_and_cache) ... ok
+test_non_english_examples (test_english_review.EnglishReviewTests.test_non_english_examples) ... ok
+test_worker_delivers_original_short_english_to_translation (test_english_review.EnglishReviewTests.test_worker_delivers_original_short_english_to_translation) ... ok
+test_200_portuguese_ims_make_zero_translation_calls (test_filters.FilterTests.test_200_portuguese_ims_make_zero_translation_calls) ... ok
+test_groups_conferences_and_unknown_names (test_filters.FilterTests.test_groups_conferences_and_unknown_names) ... ok
+test_languages_and_noise (test_filters.FilterTests.test_languages_and_noise) ... ok
+test_message_only_not_english_name (test_filters.FilterTests.test_message_only_not_english_name) ... ok
+test_reader_filters_before_language_stage (test_filters.FilterTests.test_reader_filters_before_language_stage) ... ok
+test_single_unknown_word_reaches_detector (test_filters.FilterTests.test_single_unknown_word_reaches_detector) ... ok
+test_encryption_failure_never_writes_plaintext (test_key_store.KeyStoreTests.test_encryption_failure_never_writes_plaintext) ... ok
+test_real_windows_crypto (test_key_store.KeyStoreTests.test_real_windows_crypto) ... ok
+test_save_load_forget_with_mocked_windows_crypto (test_key_store.KeyStoreTests.test_save_load_forget_with_mocked_windows_crypto) ... ok
+test_emojis_and_colons_preserved (test_log_reader.TranscriptTests.test_emojis_and_colons_preserved) ... ok
+test_new_conversation_and_repeated_message (test_log_reader.TranscriptTests.test_new_conversation_and_repeated_message) ... ok
+test_no_old_history_and_no_duplicate_on_repoll (test_log_reader.TranscriptTests.test_no_old_history_and_no_duplicate_on_repoll) ... ok
+test_partial_utf8_and_crlf (test_log_reader.TranscriptTests.test_partial_utf8_and_crlf) ... ok
+test_replaced_file_and_truncation (test_log_reader.TranscriptTests.test_replaced_file_and_truncation) ... ok
+test_system_own_links_groups_excluded (test_log_reader.TranscriptTests.test_system_own_links_groups_excluded) ... ok
+test_custom_path_from_viewer_preferences (test_viewers.DetectionTests.test_custom_path_from_viewer_preferences) ... ok
+test_does_not_scan_unrelated_directories_or_read_transcripts (test_viewers.DetectionTests.test_does_not_scan_unrelated_directories_or_read_transcripts) ... ok
+test_each_viewer_standard_avatar_folder (test_viewers.DetectionTests.test_each_viewer_standard_avatar_folder) ... ok
+test_missing_and_malformed_settings_are_nonfatal (test_viewers.DetectionTests.test_missing_and_malformed_settings_are_nonfatal) ... ok
+test_multiple_avatars_return_choices (test_viewers.DetectionTests.test_multiple_avatars_return_choices) ... ok
+test_cool_legacy_names_dates_and_without_resident (test_viewers.ViewerTests.test_cool_legacy_names_dates_and_without_resident) ... ok
+test_firestorm_optional_time_and_datestamped_names (test_viewers.ViewerTests.test_firestorm_optional_time_and_datestamped_names) ... ok
+test_new_private_logs_for_each_viewer_and_no_old_history (test_viewers.ViewerTests.test_new_private_logs_for_each_viewer_and_no_old_history) ... ok
+test_timestamp_options_keep_exclusions (test_viewers.ViewerTests.test_timestamp_options_keep_exclusions) ... ok
+test_viewer_folder_hints_and_custom_folder (test_viewers.ViewerTests.test_viewer_folder_hints_and_custom_folder) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 2.932s
+
+OK

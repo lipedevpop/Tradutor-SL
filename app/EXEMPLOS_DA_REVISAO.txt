@@ -1,0 +1,704 @@
+﻿EXEMPLOS DIRECIONADOS DA REVISÃO — v0.9.1
+PASSA = liberado para tradução; FILTRA = não enviado.
+São exemplos sintéticos de regressão; não são conversas do usuário.
+
+[compliments_and_flirting] 'hot couple'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'HOT COUPLE!'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'hot-couple'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'Hot couple 😍🔥'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'you are a hot couple'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'u r a hot couple'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'such a lovely couple'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[compliments_and_flirting] 'you two look amazing together'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[compliments_and_flirting] 'both of you look gorgeous'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[compliments_and_flirting] 'very sexy couple'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'cute couples'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'beautiful couple'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'nice couple'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'pretty girl'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'handsome guy'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'you look stunning'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'looking gorgeous'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'beautiful eyes'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'nice smile'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'love your outfit'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'love your hair'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'nice body'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'cute avatar'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'you look cute'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'you are adorable'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'so pretty'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'so hot'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'too hot'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'hot af'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'sexy af'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'damn hot'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'hot as hell'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'you turn me on'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'you are sweet'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'are you single?'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'are you married?'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'do you have a partner?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[compliments_and_flirting] 'wanna dance?'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'want to cuddle?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[compliments_and_flirting] 'can I kiss you?'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'kiss me'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'hold me'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'come closer'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'I miss your hugs'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'I like you a lot'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'you make me blush'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'you are making me shy'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[compliments_and_flirting] 'wanna hang out?'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'not interested'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[compliments_and_flirting] 'please stop'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[compliments_and_flirting] 'leave me alone'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[compliments_and_flirting] 'respect my boundaries'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'wyd'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'wbu'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'hbu'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'hru'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'idk'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'idc'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'ikr'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'brb'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'bbl'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'gtg'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'ttyl'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'afk'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'asap'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'btw'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'fyi'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'imo'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'imho'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'irl'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'jk'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'ofc'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'omw'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'lmk'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'nvm'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'np'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'ty'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'tysm'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'tyvm'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'thx'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'pls'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'plz'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'sry'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'yw'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'rn'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'tbh'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'gr8'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'l8r'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'cya'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'cu later'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'wb'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'ily'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'ilysm'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'u there?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'r u there?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'r u single?'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'how old r u?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'ur cute'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'ur hot'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'ur sexy'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'u look hot'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'luv u'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'wyd rn?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'idk yet'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'brb a minute'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'ty so much'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'thx a lot'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'see u later'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'can u help me?'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'lemme see'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'gimme a sec'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'u 2'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] '4 u'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'dunno yet'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'gonna sleep'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[chat_abbreviations] 'gotta go'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[chat_abbreviations] 'wanna come over?'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'not much'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'nothing much'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'sounds good'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'my bad'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'I see'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'good job'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'well done'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'no way'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'no rush'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'no idea'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'not sure'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'what else?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'anything else?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'so far so good'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'all yours'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'let me know'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'let me check'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'give me a second'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'long time no see'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'nice to meet you'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'pleased to meet you'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'on my way'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'be back soon'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'are you busy?'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'what happened?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'where did you go?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'how was your day?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'I am tired'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'I feel lonely'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'I am bored'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'just chilling'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'sleep well'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'sweet dreams'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'take care'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'have a nice day'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'see you tomorrow'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] "I'm sorry"
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'I’m here'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'I‘m back'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'Iʼm ready'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] "don't worry"
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'dont worry'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'cant hear you'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'im back'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'youre welcome'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'its okay'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] "I'll be right back"
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] "I've missed you"
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] "we're good"
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] "isn't it cute?"
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'hello darling'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'hiya'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'howdy'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'heya'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'wassup'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'sup'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'yup'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'yeah'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'nah'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'aww'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'oops'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'ouch'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'yikes'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'goodnight'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'goodmorning'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'Can we talk later?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'I will meet you at the party tonight.'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'I live in LA'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[daily_conversation] 'AI is amazing'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'I really enjoyed spending the evening with you and I hope we can meet again tomorrow.'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[daily_conversation] 'I sincerely appreciate your patience while I figure out why my microphone is not working.'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'tp me'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'tp pls'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'send tp'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'send me a tp'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'send me a lm'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'accept my teleport'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'need to relog'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'I crashed'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'got disconnected'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'so laggy'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'my viewer crashed'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'check your inventory'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'read the notecard'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'wear the hud'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'detach your hud'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'rez the box'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'unpack your gift'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'nice mesh body'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'new skin'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'bento head'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'bom layers'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'new sim'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'the sim is full'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'region restart'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'parcel is private'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'try this demo'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'where is the store?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'join my group'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'can you hear me?'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'voice chat'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'your mic is muted'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'turn on voice'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'mute your mic'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'im me'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'pm me'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'local chat'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'nice ao'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'sit on the poseball'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'change your windlight'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'free gifts'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'group gift'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'where did you buy that?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'how much is it?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'copy and modify'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[second_life] 'no transfer'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'script error'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[second_life] 'missing texture'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'horny'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'naughty'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'kinky'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'naked'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'wanna have sex?'
+  Esperado: PASSA; v0.9: PASSA; v0.9.1: PASSA
+[adult_and_strong_language] 'nice ass'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'sexy body'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'fuck'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'fucking hell'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'wtf'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'wth'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'stfu'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'idgaf'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'fwb'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'nsfw'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'consent matters'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[adult_and_strong_language] 'are you comfortable?'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[formatting] '  hot   couple  '
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[formatting] 'hot\\ncouple'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[formatting] 'ｈｏｔ ｃｏｕｐｌｅ'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[formatting] 'hot couple https://example.com/oi'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[formatting] '@friend hot couple'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[formatting] 'hot couple 💕 https://example.com/123'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[formatting] 'gr8!'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[formatting] 'l8r!'
+  Esperado: PASSA; v0.9: FILTRA; v0.9.1: PASSA
+[portuguese] 'oi'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'olá'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'oi tudo bem?'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'bom dia'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'boa noite'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'sim'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'não'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'nao'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'casal lindo'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'casal gostoso'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'muito quente'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'vc e seu namorado'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'vou ficar online hoje'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'você está muito bonita'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'quero dançar'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'me manda tp'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'manda o landmark'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'estou afk'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'vou relogar'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'esse hud é bom'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'o sim está cheio'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'meu viewer crashou'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'legal'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'bom'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'bem'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'obg'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'vlw'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'tbm'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'tchau'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'saudades'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'meu amor'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'beijos'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'pra você'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'a gente pode conversar amanhã'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'eu gosto de você'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'sou casada'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'sou solteiro'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[portuguese] 'amo esse casal'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'Hello John, tudo bem?'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'hey vc'
+  Esperado: FILTRA; v0.9: PASSA; v0.9.1: FILTRA
+[mixed_portuguese] 'hi você'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'hello obrigada'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'hot casal'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'casal sexy'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'hot couple muito lindo'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'sexy demais'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'nice roupa'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'thanks meu amor'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'meu friend'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'hot com vc'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'eu love you'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'you are linda'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[mixed_portuguese] 'manda tp please'
+  Esperado: FILTRA; v0.9: PASSA; v0.9.1: FILTRA
+[mixed_portuguese] 'new skin bonita'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'hola como estas'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'merci beaucoup mon ami'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'buenas noches'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'guten morgen'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'buenos dias'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'bonjour tout le monde'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'John Black'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'João Silva'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'Maria Clara'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'Juan Carlos'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'Привет как дела'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] 'こんにちは'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[other_languages_and_names] '你好'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] ''
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] ' '
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] '123'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] '12345'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] '👍'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] '💕🔥'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] '!!!'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'ok'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'okay'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'no'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'LOL'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'lmao'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'rofl'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'haha'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'hahaha'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'kkkk'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'rsrsrs'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'hehe'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'https://example.com/hello-world'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'www.example.com/hot-couple'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'secondlife:///app/agent/123/about'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] '@JohnBlack'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA
+[noise] 'john@example.com'
+  Esperado: FILTRA; v0.9: FILTRA; v0.9.1: FILTRA

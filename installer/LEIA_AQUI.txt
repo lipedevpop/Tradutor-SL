@@ -1,0 +1,25 @@
+TRADUTOR SL — INSTALAÇÃO PARA WINDOWS 64 BITS
+
+1. Abra Tradutor_SL_Setup_1.1.0.exe.
+2. Clique em Instalar. A opção de criar o ícone na área de trabalho já vem marcada.
+3. Ao terminar, clique em Concluir. O aplicativo poderá abrir automaticamente.
+
+Depois, abra pelo ícone Tradutor SL da área de trabalho ou do menu Iniciar.
+Os componentes necessários já estão incluídos. Não é necessário instalar Python.
+
+No primeiro uso, abra a engrenagem e informe sua própria chave de API DeepL.
+Quem já usava o tradutor no mesmo usuário do Windows mantém as configurações
+e a chave protegida que foram salvas pelas versões anteriores.
+
+ATUALIZAR
+Dentro do app: Configurações → Atualizações.
+O repositório oficial já está configurado: lipedevpop/Tradutor-SL.
+
+DESINSTALAR
+Use Configurações do Windows → Aplicativos → Tradutor SL → Desinstalar.
+As configurações pessoais e a chave DeepL salva serão mantidas.
+
+Este instalador foi compilado para Windows 10/11 de 64 bits. Ele ainda não
+tem certificado de assinatura digital. O Windows pode indicar editor desconhecido.
+Confira se o arquivo veio da publicação oficial:
+https://github.com/lipedevpop/Tradutor-SL/releases

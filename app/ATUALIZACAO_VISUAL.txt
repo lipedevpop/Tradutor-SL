@@ -1,0 +1,5 @@
+TRADUTOR HOT SL — v1.0.1
+
+Ícone oficial: balão de conversa com foguinho, fornecido pelo usuário.
+O arquivo ICO original foi preservado. O PNG foi extraído do mesmo ICO.
+O ícone é usado na janela e no cabeçalho. O atualizador da v1.0.0 foi mantido.

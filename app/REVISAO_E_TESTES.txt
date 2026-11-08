@@ -1,0 +1,74 @@
+﻿TRADUTOR SL v0.9.1 — REVISÃO DO FILTRO DE INGLÊS
+Data: 04/11/2026
+
+PROBLEMA REPRODUZIDO
+A mensagem "hot couple" não chegava ao DeepL. O langid retornou inglês,
+mas com confiança de aproximadamente 16,95%, abaixo dos 95% exigidos.
+A frase não constava na lista de exceções. Portanto, era descartada.
+
+CORREÇÃO
+- Reconhecimento explícito de "hot couple" e expressões relacionadas.
+- Vocabulário local com 1636 tokens conhecidos, incluindo palavras
+  ambíguas que só ajudam quando há contexto em inglês.
+- 169 expressões adicionais, além da lista anterior.
+- Combinações de até 12 tokens conhecidos com indicação de inglês são
+  reconhecidas antes do detector estatístico, cobrindo frases novas.
+- Ampliação de elogios, paquera, gírias, abreviações, contrações, termos
+  adultos, conversa cotidiana e vocabulário do Second Life.
+- Preservação de gr8/l8r, tratamento de apóstrofos tipográficos e espaços.
+- Reforço da filtragem de português e de mensagens misturadas com sinais
+  claros de português. Riso, números soltos, links e emojis continuam filtrados.
+- Cache de detecção limitado a 300 mensagens e limite de 5.000 caracteres.
+
+O texto original, incluindo emojis, caixa e pontuação, continua indo intacto
+ao DeepL. Este vocabulário reconhece inglês: não substitui a tradução por
+um dicionário local e não expande automaticamente as abreviações na API.
+O filtro continua operando somente no corpo das IMs individuais.
+
+VALIDAÇÃO DESTA REVISÃO
+35 testes automatizados passaram em Python 3.12 no Windows.
+Incluem leitura dos logs, seleção de viewers, chave protegida, cache,
+erros da API simulada, regressão de idioma e fluxo do worker.
+Uma IM "Hot couple 😍🔥" foi entregue ao tradutor simulado intacta.
+200 IMs em português produziram zero chamadas de tradução no teste existente.
+
+Amostra direcionada de 350 exemplos:
+- Inglês reconhecido: v0.9 = 69/260; v0.9.1 = 260/260.
+- Português/outros idiomas/nomes/ruído corretamente filtrados:
+  v0.9 = 88/90; v0.9.1 = 90/90.
+Esta amostra foi preparada para a revisão e seus casos orientaram a correção.
+Não é um benchmark independente nem uma estimativa da precisão em todo chat.
+Os exemplos individuais estão em EXEMPLOS_DA_REVISAO.txt.
+O registro da execução está em TESTES_AUTOMATICOS.txt.
+
+LIMITES
+Nenhuma chave pessoal foi utilizada e não houve tradução real no DeepL.
+O sentido das expressões e a tradução de gírias dependem do serviço.
+"Hot couple" agora passa pelo filtro; a redação traduzida depende do DeepL.
+Palavras compartilhadas entre idiomas, nomes, erros de digitação e gírias
+novas ainda podem ser ambíguos. Não existe cobertura garantida de todo inglês.
+Mensagens misturadas com português podem ser ignoradas de propósito.
+Não foram testados os viewers instalados, a rede do usuário ou a interface
+gráfica nesta revisão. O código visual não foi alterado, exceto a versão no título.
+As referências a teste visual em LEIA_PRIMEIRO pertencem ao pacote v0.9 original.
+
+INSTALAR
+1. Feche a versão anterior.
+2. Extraia este ZIP em uma NOVA pasta; preserve a instalação anterior.
+3. Execute 1_INSTALAR.bat e depois 2_ABRIR_TRADUTOR.bat.
+4. Confira a pasta das IMs e inicie a leitura.
+A chave protegida e as configurações usam a mesma pasta de dados anterior.
+Para repetir os testes locais, execute 4_TESTAR_FILTRO.bat.
+Os testes não fazem chamadas reais ao DeepL nem usam sua chave.
+A leitura só captura mensagens novas: peça para repetirem "hot couple"
+depois que você iniciar a nova versão.
+
+ARQUIVOS ALTERADOS
+language_filter.py — composição de vocabulário e normalização de detecção.
+english_terms.py — novo vocabulário e frases de reconhecimento.
+test_english_review.py — novos exemplos e teste de integração do worker.
+test_filters.py — palavra do teste estatístico trocada por uma fora do vocabulário.
+tradutor.py / 1_INSTALAR.bat — versão 0.9.1 nos títulos.
+LEIA_PRIMEIRO.txt — instruções atualizadas e distinção da validação histórica.
+4_TESTAR_FILTRO.bat — comando para repetir a suíte local.
+Documentação de revisão e registro dos resultados adicionados.

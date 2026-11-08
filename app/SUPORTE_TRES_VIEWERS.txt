@@ -1,0 +1,101 @@
+﻿TRADUTOR HOT SL v0.9.6 — FIRESTORM, ALCHEMY E COOL VL VIEWER
+
+COMO FUNCIONA
+Ao abrir, o modo Automático identifica o viewer:
+1. Procura nomes de executáveis de viewers em execução no Windows.
+2. Se não houver um viewer reconhecido aberto, procura configurações nas
+   pastas padrão de Firestorm, Alchemy e Cool VL Viewer, sem excluir um deles.
+3. Havendo um só candidato, usa o perfil e procura a pasta de IMs.
+4. Se houver mais de um viewer, pede que você selecione qual está usando.
+5. Se não houver candidato, permite a escolha manual e o caminho personalizado.
+
+A escolha manual fica salva para a próxima abertura.
+O modo Automático verifica na abertura ou ao clicar Detectar. Não faz
+trocas contínuas em segundo plano. Ao mudar de viewer, pause a leitura,
+abra a engrenagem e clique Detectar ou escolha o novo viewer na lista.
+O viewer não é trocado durante a leitura e a leitura continua exigindo Iniciar.
+
+SELEÇÃO MANUAL
+Na engrenagem, a lista Viewer oferece:
+- Automático
+- Firestorm
+- Alchemy
+- Cool VL Viewer
+No modo manual, Detectar busca a pasta de IMs do viewer selecionado.
+No modo Automático, Detectar repete a identificação e usa a pasta salva
+daquele viewer, se ela ainda existir; caso contrário, procura as pastas.
+Para mudar a conta ou o caminho salvo, use Escolher… com a leitura pausada.
+
+PASTAS E CONTAS
+Cada viewer mantém seu próprio caminho e seu nome de avatar.
+A busca considera as pastas padrão e InstantMessageLogPath nas preferências.
+Reconhece as configurações específicas settings_coolvlviewer_*.xml e
+settings_per_account_coolvlviewer.xml. A pasta SecondLife sozinha não é
+tratada como prova de Cool VL Viewer: ela também pode ser do viewer oficial.
+Uma única pasta de IMs é preenchida automaticamente. Com várias contas,
+você escolhe o avatar. O tradutor não adivinha pela data da última conversa.
+Uma pasta de logs salva manualmente é mantida para aquele viewer.
+Instalações portáteis e locais fora dos padrões podem exigir seleção manual.
+
+ALCHEMY
+Ative o salvamento de IMs nas preferências do Alchemy. A busca considera
+as pastas AlchemyNext e Alchemy, além do caminho de logs nas preferências.
+Selecione a subpasta do avatar com as IMs individuais em arquivos .txt.
+
+FIRESTORM
+Ative o salvamento das IMs em Preferences → Privacy → Logs & Transcripts.
+Confira o caminho em Network & Files → Directories.
+Selecione a subpasta do avatar, com as IMs individuais em arquivos .txt.
+
+COOL VL VIEWER
+Em Preferences → IM, ative Save a log of instant messages on my computer.
+Confira a pasta ao lado de Change path e escolha a subpasta do avatar.
+
+INSTALAR
+Feche a versão anterior e extraia este pacote em uma NOVA pasta.
+Execute 1_INSTALAR.bat e depois 2_ABRIR_TRADUTOR.bat.
+As configurações e a chave protegida continuam na pasta de dados anterior.
+Deixe Automático ou selecione o viewer, confira a conta e clique Iniciar.
+Somente novas mensagens serão lidas depois do início.
+
+VALIDAÇÃO
+Inclui testes de prioridade do viewer aberto, variações dos executáveis,
+dois viewers abertos, falta de detecção, falha da enumeração do Windows,
+marcadores específicos de Cool VL Viewer e seleção manual persistente.
+Testes de estado com Tk verificam pastas separadas, restauração do perfil,
+descarte de resultado atrasado e bloqueio da troca durante a leitura.
+Também mantém os testes de formatos dos logs dos três viewers, detecção
+de pastas, múltiplos avatares, inglês curto e o fluxo de tradução simulado.
+Veja TESTES_0_9_6.txt para o resultado da execução desta versão.
+
+A enumeração nativa foi executada no ambiente Windows de teste. A detecção
+de configurações locais reconheceu Alchemy e Cool VL Viewer sem escolher um arbitrariamente. A prévia visual usou
+perfil e resultado de detecção simulados, sem chave nem leitura de conversas.
+O cenário de viewer realmente aberto foi validado com nomes de processos
+simulados; a integração com o viewer em uso deve ser conferida no seu Windows.
+Não foram feitas chamadas reais ao DeepL nesta atualização.
+
+O nome Tradutor Hot SL, o ícone de foguinho, a versão nas configurações
+e a correção do filtro de inglês das versões anteriores foram preservados.
+Os relatórios REVISAO_E_TESTES.txt e ATUALIZACAO_VISUAL.txt documentam
+as revisões anteriores incluídas neste pacote.
+
+Referência da API nativa usada para enumerar nomes de executáveis:
+https://learn.microsoft.com/windows/win32/api/tlhelp32/ns-tlhelp32-processentry32w
+
+VALIDAÇÃO DA BASE v0.9.4
+56 testes passaram, incluindo Alchemy aberto, Alchemy configurado sozinho,
+os três viewers em execução, os três configurados e troca manual entre
+os três com restauração das respectivas pastas e nomes de avatar.
+Cenários de processos foram simulados. Não foram feitas traduções reais.
+
+CONTAS PREDEFINIDAS v0.9.5
+As contas lipe.vortex e mab.leeeroy estão no campo Conta.
+Cada combinação de viewer e conta lembra seu próprio caminho e nome.
+A preferência é lembrada na próxima abertura. A opção Automática prioriza
+as pastas dessas contas; se encontrar ambas, pede a escolha.
+A suíte completa atual tem 73 testes aprovados. Veja CONTAS_PREDEFINIDAS.txt.
+
+CORREÇÃO v0.9.6
+O leitor agora aceita PST/PDT e outros sufixos de fuso dos logs.
+Veja CORRECAO_COOL_PST.txt para a falha reproduzida e a validação.
