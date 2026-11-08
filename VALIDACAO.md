@@ -42,8 +42,18 @@
   de notas, preservação de releases existentes, arquivos ausentes, conferência
   dos hashes e publicação somente após anexar os arquivos ao rascunho.
 - O workflow e as ações oficiais fixadas por SHA foram preparados localmente.
-- O envio dos fontes e a primeira execução no GitHub ainda estão pendentes:
-  a conexão atual não tem escrita no repositório lipedevpop/Tradutor-SL.
+- Os 59 arquivos dos fontes foram enviados ao repositório lipedevpop/Tradutor-SL.
+- A conexão autenticada como lipedevpop foi conferida com acesso de escrita.
+- A primeira execução identificou que o endpoint por tag não encontra rascunhos
+  sem tag criada. O publicador passou a consultar a lista autenticada e retomar
+  somente rascunhos ainda não publicados; duas regressões foram adicionadas.
+- Os 10 testes do publicador, os 26 do atualizador e os 73 do app passaram.
+- GitHub Actions compilou e publicou a v1.1.0 automaticamente no Windows,
+  conferindo os hashes dos três arquivos antes de tirar a release do rascunho.
+- Execução bem-sucedida:
+  https://github.com/lipedevpop/Tradutor-SL/actions/runs/42526258104
+- Publicação confirmada como a mais recente:
+  https://github.com/lipedevpop/Tradutor-SL/releases/tag/v1.1.0
 
 O pacote de manutenção inclui os testes adicionais em tests/test_updates.py.
 Para executar, dentro da pasta dos fontes:

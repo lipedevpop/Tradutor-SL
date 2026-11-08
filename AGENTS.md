@@ -3,6 +3,10 @@
 O usuário pediu que correções concluídas sejam enviadas ao repositório e
 publicadas após os testes. Repositório: https://github.com/lipedevpop/Tradutor-SL.
 
+O fluxo automático está ativo e publicou a v1.1.0 com sucesso em 08/11/2026.
+Use a conexão GitHub autenticada como lipedevpop. Em ambientes com múltiplas
+contas, confira a identidade e o acesso de escrita antes de alterar o repositório.
+
 - Preserve a chave DeepL e as configurações do usuário fora dos pacotes.
 - Faça a correção e execute os testes pertinentes antes de preparar a release.
 - Para alterações do app, aumente APP_VERSION com tools/prepare_release.py e
