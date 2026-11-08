@@ -1,10 +1,11 @@
-import copy
+import io
 import json
 from pathlib import Path
 import sys
 import tempfile
 import unittest
 from unittest.mock import Mock, patch
+from urllib.error import HTTPError
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'tools'))
 import ci_release as ci
@@ -47,8 +48,7 @@ class PublishingTests(unittest.TestCase):
     def test_gate_requires_notes_and_does_not_replace_published_versions(self):
         self.assertEqual(ci.gate('owner/repo', self.root, lookup=lambda repo, tag: None), ('1.1.0', True))
         self.assertEqual(ci.gate('owner/repo', self.root, lookup=lambda repo, tag: self.release(False)), ('1.1.0', False))
-        with self.assertRaises(ValueError):
-            ci.gate('owner/repo', self.root, lookup=lambda repo, tag: self.release(True))
+        self.assertEqual(ci.gate('owner/repo', self.root, lookup=lambda repo, tag: self.release(True)), ('1.1.0', True))
         (self.root / 'release-notes/1.1.0.md').unlink()
         with self.assertRaises(ValueError):
             ci.gate('owner/repo', self.root, lookup=lambda repo, tag: None)
@@ -95,6 +95,24 @@ class PublishingTests(unittest.TestCase):
             ci.publish('owner/repo', 'a' * 40, self.dist, root=self.root,
                        lookup=lambda repo, tag: self.release(False), execute=execute)
         execute.assert_not_called()
+
+    def test_uncreated_tag_draft_is_found_through_authenticated_release_list(self):
+        draft = dict(self.release(True), tag_name='v1.1.0')
+        error = HTTPError('https://api.github.com/test', 404, 'Not Found', None, None)
+        with patch.object(ci, 'urlopen', side_effect=[error, io.BytesIO(json.dumps([draft]).encode())]) as request:
+            self.assertEqual(ci.api('owner/repo', 'v1.1.0', token='fake-test-token'), draft)
+        self.assertIn('/releases?per_page=100', request.call_args.args[0].full_url)
+        self.assertEqual(request.call_args.args[0].get_header('Authorization'), 'Bearer fake-test-token')
+
+    def test_interrupted_draft_is_resumed_before_publication(self):
+        lookup = Mock(side_effect=[self.release(True), self.release(True), self.release(False)])
+        execute = Mock()
+        ci.publish('owner/repo', 'a' * 40, self.dist, root=self.root, lookup=lookup, execute=execute)
+        commands = [call.args[0] for call in execute.call_args_list]
+        self.assertEqual(len(commands), 3)
+        self.assertIn('--draft', commands[0])
+        self.assertIn('--clobber', commands[1])
+        self.assertIn('--draft=false', commands[2])
 
 
 if __name__ == '__main__':

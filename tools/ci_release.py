@@ -21,7 +21,10 @@ def api(repo, tag, token=None):
             return json.load(response)
     except HTTPError as error:
         if error.code == 404:
-            return None
+            # A draft whose tag has not been created yet is absent from the
+            # by-tag endpoint. Authenticated release listing still includes it.
+            with urlopen(Request('https://api.github.com/repos/' + repo + '/releases?per_page=100', headers=headers), timeout=30) as response:
+                return next((release for release in json.load(response) if release.get('tag_name') == tag), None)
         raise RuntimeError('O GitHub recusou a consulta da release: HTTP ' + str(error.code)) from None
 
 
@@ -31,9 +34,7 @@ def gate(repo, root=ROOT, lookup=api):
     if not notes.exists() or not notes.read_text(encoding='utf-8').strip():
         raise ValueError('Faltam as notas de correção para a versão ' + version)
     existing = lookup(repo, 'v' + version)
-    if existing and existing.get('draft'):
-        raise ValueError('Existe um rascunho incompleto dessa versão. Confira-o antes de publicar novamente.')
-    return version, existing is None
+    return version, existing is None or bool(existing.get('draft'))
 
 
 def assets(dist, version):
@@ -63,16 +64,25 @@ def verify_release(release, expected):
 def publish(repo, commit, dist, root=ROOT, lookup=api, execute=subprocess.run):
     version = app_version(root)
     tag = 'v' + version
-    if lookup(repo, tag) is not None:
+    existing = lookup(repo, tag)
+    if existing is not None and not existing.get('draft'):
         raise ValueError('A versão já existe; não será substituída.')
     expected = assets(dist, version)
     notes = Path(root) / 'release-notes' / (version + '.md')
     if not notes.is_file() or not notes.read_text(encoding='utf-8').strip():
         raise ValueError('Notas de correção ausentes.')
-    command = ['gh', 'release', 'create', tag, '--repo', repo, '--target', commit,
-               '--draft', '--title', 'Tradutor SL ' + version, '--notes-file', str(notes)]
-    command.extend(str(Path(dist) / name) for name in expected)
-    execute(command, check=True)
+    if existing is None:
+        command = ['gh', 'release', 'create', tag, '--repo', repo, '--target', commit,
+                   '--draft', '--title', 'Tradutor SL ' + version, '--notes-file', str(notes)]
+        command.extend(str(Path(dist) / name) for name in expected)
+        execute(command, check=True)
+    else:
+        # Resume only an unpublished draft left by an interrupted run. A
+        # published release is rejected above and is never clobbered.
+        execute(['gh', 'release', 'edit', tag, '--repo', repo, '--target', commit,
+                 '--draft', '--title', 'Tradutor SL ' + version, '--notes-file', str(notes)], check=True)
+        execute(['gh', 'release', 'upload', tag, '--repo', repo, '--clobber',
+                 *(str(Path(dist) / name) for name in expected)], check=True)
     last_error = None
     for _ in range(10):
         try:
