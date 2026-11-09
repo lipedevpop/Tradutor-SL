@@ -9,8 +9,11 @@ ACCOUNT_CHOICES = (AUTO_ACCOUNT,) + PREFERRED_ACCOUNTS
 
 
 def account_for_folder(path):
-    name = unicodedata.normalize('NFKC', Path(path).name).casefold().strip()
+    from aurora_profiles import folder_account
+    name = folder_account(path) or Path(path).name
+    name = unicodedata.normalize('NFKC', name).casefold().strip()
     name = re.sub(r'[._\s]+', '.', name)
+    name = re.sub(r'\.resident$', '', name)
     return name if name in PREFERRED_ACCOUNTS else None
 
 

@@ -10,7 +10,7 @@ import re
 from viewer_profiles import ROOTS, VIEWERS
 
 AUTO_VIEWER = 'Automático'
-VIEWER_CHOICES = (AUTO_VIEWER, 'Firestorm', 'Alchemy', 'Cool VL Viewer')
+VIEWER_CHOICES = (AUTO_VIEWER, 'Firestorm', 'Alchemy', 'Cool VL Viewer', 'Aurora Viewer')
 
 
 @dataclass(frozen=True)
@@ -32,6 +32,8 @@ def viewer_from_executable(executable):
         return 'Cool VL Viewer'
     if name in {'alchemy', 'alchemybin', 'alchemynext', 'alchemynextbin'}:
         return 'Alchemy'
+    if name in {'auroraviewer', 'auroraviewerbin'}:
+        return 'Aurora Viewer'
     return None
 
 

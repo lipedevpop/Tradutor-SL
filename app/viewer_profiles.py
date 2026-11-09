@@ -2,16 +2,18 @@
 import os
 from pathlib import Path
 
-VIEWERS = ('Alchemy', 'Firestorm', 'Cool VL Viewer')
+VIEWERS = ('Alchemy', 'Firestorm', 'Cool VL Viewer', 'Aurora Viewer')
 ROOTS = {
     'Alchemy': ('AlchemyNext', 'Alchemy'),
     'Firestorm': ('Firestorm_x64', 'Firestorm'),
     'Cool VL Viewer': ('SecondLife', 'CoolVLViewer', 'CoolVLViewer_x64'),
+    'Aurora Viewer': ('Aurora/AuroraViewer/config',),
 }
 HELP = {
     'Alchemy': 'Ative o salvamento das IMs nas preferências do Alchemy. Escolha a pasta do avatar com os arquivos .txt.',
     'Firestorm': 'Ative Save IMs em Preferences → Privacy → Logs & Transcripts. Veja a pasta em Network & Files → Directories. Selecione a subpasta do avatar.',
     'Cool VL Viewer': 'Em Preferences → IM, ative Save a log of instant messages on my computer. Confira a pasta ao lado de Change path e selecione a subpasta do avatar.',
+    'Aurora Viewer': 'Em Preferences → Chat, ative o histórico de IMs. Clique Detectar e escolha a conta e o grid. Para escolher manualmente, selecione a pasta do grid dentro de accounts/<UUID>/chat_logs (normalmente agni).',
 }
 
 def browse_start(viewer, current='', appdata=None):
@@ -54,6 +56,9 @@ def _settings_log_paths(settings_file):
 
 def discover_folders(viewer, appdata=None):
     """Bounded search of viewer preferences and immediate avatar folders only."""
+    if viewer == 'Aurora Viewer':
+        from aurora_profiles import discover_folders as discover_aurora
+        return discover_aurora(appdata)
     from log_reader import eligible
     roaming = Path(appdata or os.environ.get('APPDATA', str(Path.home())))
     roots = [roaming / name for name in ROOTS.get(viewer, ())]

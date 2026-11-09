@@ -4,7 +4,7 @@ from pathlib import Path
 import tkinter as tk
 
 APP_NAME = 'Tradutor Hot SL'
-APP_VERSION = '1.1.0'
+APP_VERSION = '1.1.1'
 ASSETS = Path(__file__).resolve().parent / 'assets'
 
 

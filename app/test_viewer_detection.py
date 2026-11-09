@@ -226,6 +226,22 @@ class ViewerSelectionUITests(unittest.TestCase):
             self.assertTrue(self.app.viewer_resolved)
             self.assertEqual(self.app.folder.get(), str(folder))
 
+    def test_aurora_selection_keeps_other_profiles_and_uses_avatar_alias(self):
+        self.app.viewer_choice.set('Aurora Viewer')
+        self.app.change_viewer()
+        self.assertEqual(self.app.viewer.get(), 'Aurora Viewer')
+        self.assertIn('chat_logs', self.app.viewer_help.get())
+        with patch('tradutor.aurora_account', return_value='Other Resident'):
+            self.app.set_detected_folder(self.alchemy)
+        self.assertEqual(self.app.aliases.get(), 'Other Resident')
+        self.app.viewer_choice.set('Firestorm')
+        self.app.change_viewer()
+        self.assertEqual(self.app.folder.get(), str(self.fire))
+        self.app.viewer_choice.set('Aurora Viewer')
+        self.app.change_viewer()
+        self.assertEqual(self.app.folder.get(), str(self.alchemy))
+        self.assertEqual(self.app.aliases.get(), 'Other Resident')
+
     def make_preferred_folders(self):
         lipe = Path(self.temp.name) / 'lipe_vortex'
         mab = Path(self.temp.name) / 'mab_leeeroy'

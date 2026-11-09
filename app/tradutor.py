@@ -21,6 +21,7 @@ from soft_ui import SoftCard, SoftButton, SoftSwitch, BG, PANEL, FG, MUTED, BLUE
 from app_identity import APP_NAME, APP_VERSION, set_window_icon
 from viewer_detection import AUTO_VIEWER, VIEWER_CHOICES, detect_viewers
 from account_profiles import AUTO_ACCOUNT, ACCOUNT_CHOICES, PREFERRED_ACCOUNTS, account_for_folder, account_folders
+from aurora_profiles import folder_account as aurora_account, folder_label
 from update_ui import Updates, mark_startup_ready
 
 
@@ -558,7 +559,7 @@ class App:
         if self.watching:
             return
         if not self.viewer_resolved:
-            self.status.set('Selecione Firestorm, Alchemy ou Cool VL Viewer antes de escolher a pasta do avatar.')
+            self.status.set('Selecione o viewer nas configurações antes de escolher a pasta das conversas.')
             return
         self.detect_generation += 1
         self.detecting = False
@@ -599,7 +600,8 @@ class App:
         if account:
             self._account_name = account
             self.account_choice.set(account)
-        self.aliases.set(self._account_name if self._account_name in PREFERRED_ACCOUNTS else Path(path).name.replace('_', ' '))
+        name = aurora_account(path) if self.viewer.get() == 'Aurora Viewer' else ''
+        self.aliases.set(name or (self._account_name if self._account_name in PREFERRED_ACCOUNTS else Path(path).name.replace('_', ' ')))
         self.persist()
         self.status.set('Pasta encontrada para ' + self.viewer.get() + ': ' + Path(path).name)
 
@@ -662,7 +664,7 @@ class App:
         items = tk.Listbox(picker, font=(self.UI_FONT, 10), bg=self.PANEL, fg=self.FG, selectbackground='#d9e8f2', selectforeground=self.FG, exportselection=False)
         items.pack(fill='both', expand=True, padx=12)
         for path in paths:
-            items.insert('end', str(path))
+            items.insert('end', folder_label(path) if self.viewer.get() == 'Aurora Viewer' else str(path))
         scrollbar = ttk.Scrollbar(picker, orient='horizontal', command=items.xview)
         scrollbar.pack(fill='x', padx=12)
         items.configure(xscrollcommand=scrollbar.set)
@@ -703,7 +705,7 @@ class App:
     def toggle(self):
         if not self.watching and not self.viewer_resolved:
             self.open_settings()
-            self.status.set('Identifique o viewer em Automático → Detectar, ou selecione Firestorm / Alchemy / Cool VL Viewer manualmente.')
+            self.status.set('Identifique o viewer em Automático → Detectar, ou selecione o viewer manualmente nas configurações.')
             return
         if not self.api_configured and not self.watching:
             self.open_settings()
